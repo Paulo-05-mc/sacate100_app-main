@@ -70,7 +70,7 @@ class AuthService {
     }
     print('Headers: $_headers');
     print('Token: $_token');
-    final url = Uri.parse('$_baseUrl/Users/me');
+    final url = Uri.parse('$_baseUrl/Users');
     final res = await http.get(url, headers: _headers);
 
     print('Response: ${res.statusCode} - ${res.body}');
